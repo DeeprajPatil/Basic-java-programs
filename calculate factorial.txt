@@ -1,0 +1,49 @@
+// java program to calculate factorial of a number
+
+import java.util.Scanner;
+
+public class factorial {
+    public static void main(String args[]){
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number : ");
+
+        int n = sc.nextInt();
+
+        int factorial = 1;
+
+        // method 1
+
+        if(n>=0){
+        for(int i = 1; i<=n; i++){
+        factorial = factorial*i;
+        }
+
+        System.out.println("Factorial of given number is : "+factorial);
+
+        }
+
+        else{
+           System.out.println("Invalid number");
+        }
+
+        // method 2
+
+        if(n>=0){
+        for(int i = n; i>=0 ; i--){
+        factorial = factorial*i;
+        }
+
+        System.out.println("Factorial of given number is : "+factorial);
+
+        }
+
+        else{
+           System.out.println("Invalid number");
+        }
+        
+    }
+}
+
+ 
